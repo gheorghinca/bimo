@@ -1,47 +1,47 @@
 <template name="addItem">
   <div class="template-addItem">
-
-  {{#autoForm collection="Items" id="insertItemForm" type="insert" }}
-    <fieldset>
-      <legend>Create ad</legend>
-      {{> afQuickField name='partitioned' options="allowed"}}
-      <div class="row">
-        <div class="col-sm-4">
-            {{> afQuickField name='price'}}
-        </div>
-        <div class="col-sm-4">
-            {{> afQuickField name='currency' options="allowed"}}
-        </div>
-        <div class="col-sm-4">
-            {{> afQuickField name='negociable'}}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          {{> afQuickField name='noRooms'}}
-        </div>
-        <div class="col-sm-4">
-          {{> afQuickField name='constructionYear'}}
-        </div>
-        <div class="col-sm-4">
-          {{> afQuickField name='city'}}
-        </div>
-      </div>
-      {{> afQuickField name='description'}}
-      <div class="row">
-        <div class="col-sm-4">
-          {{> afQuickField name='contactName'}}
-        </div>
+    <div class="jumbotron">
+      {{#autoForm collection="Items" id="insertItemForm" type="insert" }}
+      <fieldset>
+        <legend>Create ad</legend>
+        {{> afQuickField name='title'}} {{> afQuickField name='partitioned' options="allowed"}}
+        <div class="row">
           <div class="col-sm-4">
-          {{> afQuickField name='email'}}
+            {{> afQuickField name='price'}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='currency' options="allowed"}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='negociable'}}
+          </div>
         </div>
-        <div class="col-sm-4">
-          {{> afQuickField name='phoneNo'}}
+        <div class="row">
+          <div class="col-sm-4">
+            {{> afQuickField name='noRooms'}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='constructionYear'}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='city'}}
+          </div>
         </div>
-      </div>
-    </fieldset>
-    <button type="submit" class="btn btn-primary">Create</button>
-  {{/autoForm}}
-</div>
-
+        {{> afQuickField name='description'}}
+        <div class="row">
+          <div class="col-sm-4">
+            {{> afQuickField name='contactName'}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='email'}}
+          </div>
+          <div class="col-sm-4">
+            {{> afQuickField name='phoneNo'}}
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary">Create</button>
+      {{/autoForm}}
+    </div>
+  </div>
 </template>

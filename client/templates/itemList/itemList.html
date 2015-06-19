@@ -1,12 +1,18 @@
 <template name="itemList">
   <div class="template-itemList">
-test
+<!-- test
      {{#each itemsList}}
         <div class="ss">
           {{description}}
        </div>
-     {{/each}}
-
+     {{/each}} -->
+     {{> items}}
 
   </div>
+</template>
+
+
+<template name="items">
+  {{> pagesNav}}
+  {{> pages}}
 </template>

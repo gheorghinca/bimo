@@ -1,10 +1,10 @@
-Router.route('/', {
-  name: 'home'
-});
-
-Router.route('/dashboard', {
-  name: 'dashboard'
-});
+// Router.route('/', {
+//   name: 'home'
+// });
+//
+// Router.route('/dashboard', {
+//   name: 'dashboard'
+// });
 
 Router.plugin('ensureSignedIn', {
   only: ['dashboard']
@@ -17,7 +17,7 @@ Router.route('/addItem', {
   where: 'client'
 });
 
-Router.route('/itemList', {
+Router.route('/', {
   name: 'itemList',
   controller: 'ItemsListController',
   where: 'client'
